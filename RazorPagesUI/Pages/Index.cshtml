@@ -25,6 +25,16 @@
     <br />
     <br />
 
+    <script type="text/javascript">
+        fetch("/js/sample-file.json")
+            .then(response => response.json())
+            .then(data => {
+                console.log(data),
+                    console.log(data.firstName)
+                document.querySelector("#output").innerHTML = "First Name: " + data.firstName
+            })
+
+    </script>
 
     <div id="container">
         <div id="output">

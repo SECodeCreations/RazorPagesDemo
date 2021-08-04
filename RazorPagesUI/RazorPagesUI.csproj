@@ -6,6 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\js\sample-file.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\sample-file.json" />
     <None Include="wwwroot\js\script.js" />
   </ItemGroup>
 

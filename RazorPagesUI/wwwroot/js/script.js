@@ -3,6 +3,3 @@
     "lastName": "Smith"
 }
 
-var output = document.getElementById('output');
-
-output.innerHTML = jcontent.firstName;
