@@ -28,20 +28,22 @@
     <script type="text/javascript">
         fetch("/js/sample-file.json")
             .then(response => response.json())
-            .then(data => {
-                console.log(data),
-                    console.log(data.firstName)
-                document.querySelector("#output").innerHTML = "First Name: " + data.firstName
+            .then(blobFileData => {
+                console.log(blobFileData),
+                    console.log(blobFileData.firstName)
+                document.querySelector("#output-firstName").innerHTML = "First Name: " + blobFileData.firstName
+                document.querySelector("#output-lastName").innerHTML = "Last Name: " + blobFileData.lastName
             })
-
     </script>
 
+
+
     <div id="container">
-        <div id="output">
+        <div id="output-firstName">
+            Nothing yet.
+        </div>
+        <div id="output-lastName">
             Nothing yet.
         </div>
 
     </div>
-
-
-</div>
